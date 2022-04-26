@@ -408,6 +408,9 @@ button.menuIcon:focus {
   background-color: transparent;
 }
 
+a {
+  display: inline-block;
+}
 a.button {
   color: #084b6d;
   background-color: transparent;
@@ -427,6 +430,11 @@ a.button:hover {
 a.button:focus {
   background-color: #084b6d;
   color: #fff;
+}
+
+img {
+  max-width: 100%;
+  display: block;
 }
 
 /* _nav.scss */
@@ -611,6 +619,44 @@ footer .footerNav nav a:hover {
 }
 footer .footerNav nav a:focus {
   color: white;
+}
+
+.productsMainContent section {
+  padding: 75px 0;
+}
+.productsMainContent h2 {
+  text-align: center;
+}
+.productsMainContent p {
+  text-align: center;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.products li {
+  -ms-flex-preferred-size: calc(33.3333333333% - 20px);
+      flex-basis: calc(33.3333333333% - 20px);
+  margin: 5px 10px;
+}
+.products img {
+  border-radius: 5%;
+}
+.products .popularProduct {
+  font-weight: 700;
+}
+.products .discountedPrice {
+  text-decoration: line-through;
+  color: rgba(8, 75, 109, 0.5);
+}
+.products .discountedPrice span {
+  display: inline-block;
+  text-decoration: none;
+  color: #084b6d;
 }
 
 @media (max-width: 480px) {

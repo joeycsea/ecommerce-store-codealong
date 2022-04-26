@@ -38,7 +38,7 @@
    </nav> <!-- .navBar END -->
 
 
-   <main id="productsMainContent">
+   <main id="productsMainContent" class="productsMainContent">
       <section class="allProducts">
          <div class="wrapper">
             <h2>All Products</h2>
@@ -47,6 +47,7 @@
                   <a href="">
                      <img src="./assets/safari-trio.jpg" alt="Hand-carved safari animal toys">
                      <!-- PLSFIXTHIS: this should be h3? -->
+                        <!-- If element remains in a <p> tag, nest <strong> element within the paragraphs -->
                      <p class="popularProduct">Safari Trio</p>
                      <p class="price">$49.00USD</p>
                   </a>
@@ -55,8 +56,7 @@
                   <a href="">
                      <img src="./assets/octopus.jpg" alt="Wooden toy octopus">
                      <p class="popularProduct">Octopus</p>
-                     <p class="discountedPrice">$18.00USD</p>
-                     <p class="price">$15.00USD</p>
+                     <p class="discountedPrice">$18.00USD<span>$15.00USD</span></p>
                   </a>
                </li>
                <li>

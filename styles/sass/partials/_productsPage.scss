@@ -1,0 +1,50 @@
+// products page
+
+.productsMainContent {
+   section {
+      padding: 75px 0;
+   }
+
+   h2 {
+      text-align: center;
+   }
+
+   p {
+      text-align: center;
+   }
+
+}
+
+
+// flex-parent
+.products {
+   display: flex;
+   flex-wrap: wrap;
+   // because we are using the default flex-direction value (row) the main axis of alignment is the x-axis. Therefore flex-basis will represent the width property
+   
+   // flex-child
+      li {
+         flex-basis: calc((100%/3) - 20px);
+         margin: 5px 10px;
+      }
+
+      img {
+         border-radius: 5%;
+      }
+      
+      .popularProduct {
+         font-weight: 700;
+      }
+
+      .discountedPrice {
+         text-decoration: line-through;
+         color: rgba($color: $primary, $alpha: 0.5);
+         span {
+            display: inline-block;
+            text-decoration: none;
+            color: rgba($color: $primary, $alpha: 1);
+         }
+      }
+}
+
+
